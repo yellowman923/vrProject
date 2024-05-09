@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Index</title>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="//unpkg.com/aframe-extras@4.1.2/dist/aframe-extras.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="game.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <a-scene start-game physics="debug: true; restitution: 2; friction: 0.7; gravity: -20;">
+        <a-camera kinematic-body="radius: 1.8"></a-camera>
+        <a-plane static-body color="green" width="30" height="30" rotation="90 0 0"></a-plane>
+        <a-box dynamic-body color="red" width="2" height="2" depth="2" position="0 5 -5"></a-box>
+    </a-scene>
+</body>
+</html>
